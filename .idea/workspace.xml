@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e73d0f1-5828-4366-ad95-57fe55e7ef12" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/3120004971/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8e73d0f1-5828-4366-ad95-57fe55e7ef12" name="变更" comment="使用hanlp的分词手段 并测试分词和文件读取以及读取的异常" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,8 +125,16 @@
       <updated>1663335939720</updated>
       <workItem from="1663335941065" duration="7074000" />
       <workItem from="1663518460376" duration="4870000" />
-      <workItem from="1663659412122" duration="8083000" />
+      <workItem from="1663659412122" duration="8713000" />
     </task>
+    <task id="LOCAL-00001" summary="使用hanlp的分词手段 并测试分词和文件读取以及读取的异常">
+      <created>1663685166075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663685166075</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,5 +151,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="使用hanlp的分词手段 并测试分词和文件读取以及读取的异常" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用hanlp的分词手段 并测试分词和文件读取以及读取的异常" />
   </component>
 </project>
