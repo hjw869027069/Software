@@ -23,6 +23,7 @@ public class MainTest {
     static String simpleCopyWord = "今天是周天，天气晴朗，我晚上要去看电影。";
 
     static String OrigFilePath = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig.txt";
+    static String CopyFilePath1 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_add.txt";
 
 
     @BeforeEach
@@ -255,5 +256,21 @@ public class MainTest {
         Assertions.assertTrue(0 < similarity && similarity < 1, "相似度不在0-1之间");
 
 
+    }
+
+    @Test
+    void testGetSimilarity1(){
+        String hash1;
+        String hash2;
+
+        try {
+            hash1 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(OrigFilePath)));
+            hash2 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(CopyFilePath1)));
+            double similarity = CalculationUtils.getSimilarity(hash1, hash2);
+            System.out.println(similarity);
+            Assertions.assertTrue(0 < similarity && similarity < 1, "相似度不在0-1之间");
+        } catch (FileAnalyseException | NotFoundFileException e) {
+            e.printStackTrace();
+        }
     }
 }
