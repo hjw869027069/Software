@@ -354,4 +354,16 @@ public class MainTest {
             Assertions.fail("写入文件失败");
         }
     }
+
+    /**
+     * 测试主函数
+     */
+    @Test
+    void testMain(){
+        String[] args = new String[3];
+        args[0] = OrigFilePath;
+        args[1] = CopyFilePath1;
+        args[2] = writeFilePath;
+        Main.main(args);
+    }
 }
