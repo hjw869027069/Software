@@ -43,8 +43,9 @@ public class Main {
                 "对比文件：" + args[1] + "\n" +
                 format + "\n" +
                 "比较时间为：" + DateUtil.now() + "\n";
+        ;
+        CommonUtils.writeFile(args[2],writeFileContent);
 
-        CommonUtils.writeFile(writeFileContent, args[2]);
 
 
     }

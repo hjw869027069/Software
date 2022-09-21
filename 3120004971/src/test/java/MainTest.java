@@ -21,14 +21,15 @@ public class MainTest {
 
     static String simpleWord = "今天是星期天，天气晴，今天晚上我要去看电影。";
     static String simpleCopyWord = "今天是周天，天气晴朗，我晚上要去看电影。";
-    static String writeFilePath = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\write.txt";
+    static String writeFilePath = "C:\\Users\\HJW\\Desktop\\测试文本\\write.txt";
 
-    static String OrigFilePath = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig.txt";
-    static String CopyFilePath1 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_add.txt";
-    static String CopyFilePath2 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_del.txt";
-    static String CopyFilePath3 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_dis_1.txt";
-    static String CopyFilePath4 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_dis_10.txt";
-    static String CopyFilePath5 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_dis_15.txt";
+
+    static String OrigFilePath = "C:\\Users\\HJW\\Desktop\\测试文本\\orig.txt";
+    static String CopyFilePath1 = "C:\\Users\\HJW\\Desktop\\测试文本\\orig_0.8_add.txt";
+    static String CopyFilePath2 = "C:\\Users\\HJW\\Desktop\\测试文本\\orig_0.8_del.txt";
+    static String CopyFilePath3 = "C:\\Users\\HJW\\Desktop\\测试文本\\orig_0.8_dis_1.txt";
+    static String CopyFilePath4 = "C:\\Users\\HJW\\Desktop\\测试文本\\orig_0.8_dis_10.txt";
+    static String CopyFilePath5 = "C:\\Users\\HJW\\Desktop\\测试文本\\orig_0.8_dis_15.txt";
 
 
 

@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e73d0f1-5828-4366-ad95-57fe55e7ef12" name="变更" comment="更新测试">
+    <list default="true" id="8e73d0f1-5828-4366-ad95-57fe55e7ef12" name="变更" comment="最终版">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3120004971/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3120004971/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3120004971/src/main/java/util/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/src/main/java/util/CommonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3120004971/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/src/test/java/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3120004971/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3120004971/target/classes/util/CalculationUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/classes/util/CalculationUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3120004971/target/classes/util/CommonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/classes/util/CommonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3120004971/target/main.jar" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/main.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3120004971/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3120004971/target/test-classes/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/test-classes/MainTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +63,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/game（）" />
@@ -76,7 +77,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.testGetSimilarity">
+  <component name="RunManager" selected="JUnit.MainTest.testWriteFile">
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="3120004971" />
       <option name="PACKAGE_NAME" value="" />
@@ -128,8 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest.testGetSimilarity" />
         <item itemvalue="JUnit.MainTest.testWriteFile" />
+        <item itemvalue="JUnit.MainTest.testGetSimilarity" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.testGetSimilarity2" />
         <item itemvalue="JUnit.MainTest.testGetSimilarity1" />
@@ -146,7 +147,7 @@
       <updated>1663335939720</updated>
       <workItem from="1663335941065" duration="7074000" />
       <workItem from="1663518460376" duration="4870000" />
-      <workItem from="1663659412122" duration="33810000" />
+      <workItem from="1663659412122" duration="35954000" />
     </task>
     <task id="LOCAL-00001" summary="使用hanlp的分词手段 并测试分词和文件读取以及读取的异常">
       <created>1663685166075</created>
@@ -183,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663774896660</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="最终版">
+      <created>1663778733870</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663778733870</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +213,7 @@
     <MESSAGE value="使用hanlp的分词手段 并测试分词和文件读取以及读取的异常" />
     <MESSAGE value="使用simHash特征码以及杰卡德系数算出相似度" />
     <MESSAGE value="更新测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新测试" />
+    <MESSAGE value="最终版" />
+    <option name="LAST_COMMIT_MESSAGE" value="最终版" />
   </component>
 </project>
