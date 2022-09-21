@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e73d0f1-5828-4366-ad95-57fe55e7ef12" name="变更" comment="使用simHash特征码以及杰卡德系数算出相似度">
+    <list default="true" id="8e73d0f1-5828-4366-ad95-57fe55e7ef12" name="变更" comment="更新测试">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3120004971/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3120004971/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3120004971/src/main/java/util/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/src/main/java/util/CommonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3120004971/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/src/test/java/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3120004971/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3120004971/target/classes/util/CalculationUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/classes/util/CalculationUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3120004971/target/classes/util/CommonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/classes/util/CommonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3120004971/target/test-classes/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/test-classes/MainTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,23 +76,12 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.testGetSimilarity1">
-    <configuration name="MainTest.testCalculateSimHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MainTest.testGetSimilarity">
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="3120004971" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testCalculateSimHash" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.testGetSimHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="3120004971" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testGetSimHash" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,11 +106,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testHashWeight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.testGetSimilarity2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="3120004971" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testHashWeight" />
+      <option name="METHOD_NAME" value="testGetSimilarity2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.testWriteFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="3120004971" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="testWriteFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest.testGetSimilarity1" />
         <item itemvalue="JUnit.MainTest.testGetSimilarity" />
-        <item itemvalue="JUnit.MainTest.testGetSimHash" />
-        <item itemvalue="JUnit.MainTest.testCalculateSimHash" />
-        <item itemvalue="JUnit.MainTest.testHashWeight" />
+        <item itemvalue="JUnit.MainTest.testWriteFile" />
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.testGetSimilarity2" />
+        <item itemvalue="JUnit.MainTest.testGetSimilarity1" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +146,7 @@
       <updated>1663335939720</updated>
       <workItem from="1663335941065" duration="7074000" />
       <workItem from="1663518460376" duration="4870000" />
-      <workItem from="1663659412122" duration="30523000" />
+      <workItem from="1663659412122" duration="33810000" />
     </task>
     <task id="LOCAL-00001" summary="使用hanlp的分词手段 并测试分词和文件读取以及读取的异常">
       <created>1663685166075</created>
@@ -169,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663774416577</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="更新测试">
+      <created>1663774896660</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663774896660</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +204,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="使用hanlp的分词手段 并测试分词和文件读取以及读取的异常" />
     <MESSAGE value="使用simHash特征码以及杰卡德系数算出相似度" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用simHash特征码以及杰卡德系数算出相似度" />
+    <MESSAGE value="更新测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新测试" />
   </component>
 </project>

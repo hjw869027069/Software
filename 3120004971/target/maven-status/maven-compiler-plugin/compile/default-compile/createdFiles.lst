@@ -1,0 +1,6 @@
+exceptions\NotFoundFileException.class
+util\CalculationUtils.class
+Main.class
+exceptions\HashException.class
+exceptions\FileAnalyseException.class
+util\CommonUtils.class

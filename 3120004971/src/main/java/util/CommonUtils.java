@@ -63,4 +63,14 @@ public class CommonUtils {
         return wordCount;
     }
 
+
+    /**
+     * 覆盖写入文件
+     * @param filePath 文件路径
+     * @param content 内容
+     */
+    public static void writeFile(String filePath, String content) {
+        FileUtil.appendString(content, filePath, "utf-8");
+    }
+
 }

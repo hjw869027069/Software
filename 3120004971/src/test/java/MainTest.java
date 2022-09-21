@@ -21,16 +21,15 @@ public class MainTest {
 
     static String simpleWord = "今天是星期天，天气晴，今天晚上我要去看电影。";
     static String simpleCopyWord = "今天是周天，天气晴朗，我晚上要去看电影。";
+    static String writeFilePath = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\write.txt";
 
     static String OrigFilePath = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig.txt";
     static String CopyFilePath1 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_add.txt";
+    static String CopyFilePath2 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_del.txt";
+    static String CopyFilePath3 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_dis_1.txt";
+    static String CopyFilePath4 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_dis_10.txt";
+    static String CopyFilePath5 = "C:\\Users\\HJW\\Desktop\\测试文本 (1)\\orig_0.8_dis_15.txt";
 
-
-    @BeforeEach
-    void init(){
-
-
-    }
 
 
     /**
@@ -253,6 +252,8 @@ public class MainTest {
         }
         double similarity = CalculationUtils.getSimilarity(hash1, hash2);
         System.out.println(similarity);
+        String format = String.format("相似度为：%.2f", similarity);
+        System.out.println(format);
         Assertions.assertTrue(0 < similarity && similarity < 1, "相似度不在0-1之间");
 
 
@@ -271,6 +272,85 @@ public class MainTest {
             Assertions.assertTrue(0 < similarity && similarity < 1, "相似度不在0-1之间");
         } catch (FileAnalyseException | NotFoundFileException e) {
             e.printStackTrace();
+        }
+    }
+
+    @Test
+    void testGetSimilarity2(){
+        String hash1;
+        String hash2;
+
+        try {
+            hash1 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(OrigFilePath)));
+            hash2 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(CopyFilePath2)));
+            double similarity = CalculationUtils.getSimilarity(hash1, hash2);
+            System.out.println(similarity);
+            Assertions.assertTrue(0 < similarity && similarity < 1, "相似度不在0-1之间");
+        } catch (FileAnalyseException | NotFoundFileException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    void testGetSimilarity3(){
+        String hash1;
+        String hash2;
+
+        try {
+            hash1 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(OrigFilePath)));
+            hash2 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(CopyFilePath3)));
+            double similarity = CalculationUtils.getSimilarity(hash1, hash2);
+            System.out.println(similarity);
+            Assertions.assertTrue(0 < similarity && similarity < 1, "相似度不在0-1之间");
+        } catch (FileAnalyseException | NotFoundFileException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    void testGetSimilarity4(){
+        String hash1;
+        String hash2;
+
+        try {
+            hash1 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(OrigFilePath)));
+            hash2 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(CopyFilePath4)));
+            double similarity = CalculationUtils.getSimilarity(hash1, hash2);
+            System.out.println(similarity);
+            Assertions.assertTrue(0 < similarity && similarity < 1, "相似度不在0-1之间");
+        } catch (FileAnalyseException | NotFoundFileException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    void testGetSimilarity5(){
+        String hash1;
+        String hash2;
+
+        try {
+            hash1 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(OrigFilePath)));
+            hash2 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(CopyFilePath5)));
+            double similarity = CalculationUtils.getSimilarity(hash1, hash2);
+            System.out.println(similarity);
+            Assertions.assertTrue(0 < similarity && similarity < 1, "相似度不在0-1之间");
+        } catch (FileAnalyseException | NotFoundFileException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 测试写入文件
+     */
+    @Test
+    void testWriteFile(){
+        CommonUtils.writeFile(writeFilePath, "test");
+        try {
+            String s = CommonUtils.readFileToStr(writeFilePath);
+            Assertions.assertTrue(s.contains("test"),"写入文件失败");
+        } catch (NotFoundFileException e) {
+            e.printStackTrace();
+            Assertions.fail("写入文件失败");
         }
     }
 }
