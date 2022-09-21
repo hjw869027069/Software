@@ -144,8 +144,8 @@ public class CalculationUtils {
                 distance++;
             }
         }
-        // 杰卡德相似系数 = 1 - 汉明距离 / simHash长度
-        return 1-((double)distance/256);
+        // 杰卡德相似系数 = 1 - (汉明距离 / simHash长度)
+        return 1-((double)distance/(simHash1.length()+simHash2.length()));
     }
 
 }
