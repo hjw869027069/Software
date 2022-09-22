@@ -255,7 +255,27 @@ public class MainTest {
         System.out.println(similarity);
         String format = String.format("相似度为：%.2f", similarity);
         System.out.println(format);
-        Assertions.assertTrue(0 < similarity && similarity < 1, "相似度不在0-1之间");
+        Assertions.assertTrue(0 <= similarity && similarity <= 1, "相似度不在0-1之间");
+
+
+    }
+
+    @Test
+    void testGetNotSimilarity(){
+        String hash1 = null;
+        String hash2 = null;
+        try {
+            hash1 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(simpleCopyWord));
+            hash2 = CalculationUtils.calculateSimHash(CommonUtils.analyseString("明天是疯狂星期四，我要去吃肯德基，跟你一起"));
+        } catch (FileAnalyseException e) {
+            e.printStackTrace();
+            Assertions.fail("解析错误");
+        }
+        double similarity = CalculationUtils.getSimilarity(hash1, hash2);
+        System.out.println(similarity);
+        String format = String.format("相似度为：%.2f", similarity);
+        System.out.println(format);
+        Assertions.assertTrue(0 <= similarity && similarity <= 1, "相似度不在0-1之间");
 
 
     }
@@ -270,7 +290,7 @@ public class MainTest {
             hash2 = CalculationUtils.calculateSimHash(CommonUtils.analyseString(CommonUtils.readFileToStr(CopyFilePath1)));
             double similarity = CalculationUtils.getSimilarity(hash1, hash2);
             System.out.println(similarity);
-            Assertions.assertTrue(0 < similarity && similarity < 1, "相似度不在0-1之间");
+            Assertions.assertTrue(0 <= similarity && similarity <= 1, "相似度不在0-1之间");
         } catch (FileAnalyseException | NotFoundFileException e) {
             e.printStackTrace();
         }

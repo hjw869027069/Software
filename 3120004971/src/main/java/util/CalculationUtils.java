@@ -17,6 +17,9 @@ import java.util.Map;
 public class CalculationUtils {
 
     static final int HASH_BIT = 128;
+    static final int DISTANCE_WAY1 = 16;
+    static final int DISTANCE_WAY2 = 32;
+    static final int DISTANCE_WAY3 = 64;
 
     /**
      * 采用MD5进行对词语进行hash，得到的hash值使用16进制解析 再利用算法取128位二进制
@@ -130,7 +133,7 @@ public class CalculationUtils {
     }
 
     /**
-     * 计算两个simHash的相似度（杰卡德相似系数）
+     * 计算两个simHash的相似度
      * @param simHash1 simHash1
      * @param simHash2 simHash2
      * @return 相似度
@@ -144,8 +147,18 @@ public class CalculationUtils {
                 distance++;
             }
         }
-        // 杰卡德相似系数 = 1 - (汉明距离 / simHash长度)
-        return 1-((double)distance/(simHash1.length()+simHash2.length()));
+//        System.out.println("汉明距离为：" + distance);
+        // 更换计算策略
+        if (distance >= 0 && distance <= DISTANCE_WAY1) {
+            return 1 - (double) distance / 256;
+        } else if (distance > 16 && distance <= DISTANCE_WAY2) {
+            return 1 - (double) distance / 128;
+        }else if (distance > 32 && distance <= DISTANCE_WAY3) {
+            return 1 - (double) distance / 64;
+        }else {
+            return 0;
+        }
+
     }
 
 }
