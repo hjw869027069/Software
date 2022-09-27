@@ -7,12 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="四则运算" />
-        <module name="3120004971" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="3120004971" target="11" />
-      <module name="四则运算" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

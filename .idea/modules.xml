@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/3120004971/3120004971.iml" filepath="$PROJECT_DIR$/3120004971/3120004971.iml" />
+      <module fileurl="file://$PROJECT_DIR$/四则运算/四则运算.iml" filepath="$PROJECT_DIR$/四则运算/四则运算.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/软件工程.iml" filepath="$PROJECT_DIR$/.idea/软件工程.iml" />
     </modules>
   </component>

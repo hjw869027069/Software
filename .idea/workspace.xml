@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e73d0f1-5828-4366-ad95-57fe55e7ef12" name="变更" comment="最终版">
+    <list default="true" id="8e73d0f1-5828-4366-ad95-57fe55e7ef12" name="变更" comment="最终版(更改相似度计算策略)">
+      <change afterPath="$PROJECT_DIR$/四则运算/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/四则运算/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/四则运算/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/四则运算/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/四则运算/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/四则运算/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/四则运算/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/四则运算/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/四则运算/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3120004971/src/main/java/util/CalculationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/src/main/java/util/CalculationUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3120004971/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/src/test/java/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3120004971/target/classes/util/CalculationUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/classes/util/CalculationUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3120004971/target/test-classes/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/3120004971/target/test-classes/MainTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +67,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../develop/jprofiler9/bin/jprofiler.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/四则运算" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -143,7 +148,8 @@
       <updated>1663335939720</updated>
       <workItem from="1663335941065" duration="7074000" />
       <workItem from="1663518460376" duration="4870000" />
-      <workItem from="1663659412122" duration="47598000" />
+      <workItem from="1663659412122" duration="48331000" />
+      <workItem from="1664296447777" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="使用hanlp的分词手段 并测试分词和文件读取以及读取的异常">
       <created>1663685166075</created>
@@ -208,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663789576563</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="最终版(更改相似度计算策略)">
+      <created>1663815699442</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663815699442</updated>
+    </task>
+    <task id="LOCAL-00011" summary="最终版(更改相似度计算策略)">
+      <created>1663815709647</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663815709647</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +252,8 @@
     <MESSAGE value="更新测试" />
     <MESSAGE value="修改一部分bug 最终版" />
     <MESSAGE value="最终版" />
-    <option name="LAST_COMMIT_MESSAGE" value="最终版" />
+    <MESSAGE value="最终版(更改相似度计算策略)" />
+    <option name="LAST_COMMIT_MESSAGE" value="最终版(更改相似度计算策略)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$3120004971.ic" NAME="3120004971中的所有 覆盖结果" MODIFIED="1663789063025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
