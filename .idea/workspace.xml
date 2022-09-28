@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e73d0f1-5828-4366-ad95-57fe55e7ef12" name="变更" comment="最终版(更改相似度计算策略)">
-      <change afterPath="$PROJECT_DIR$/四则运算/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/四则运算/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/四则运算/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/四则运算/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/四则运算/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/四则运算/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/四则运算/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/四则运算/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/四则运算/pom.xml" afterDir="false" />
+    <list default="true" id="8e73d0f1-5828-4366-ad95-57fe55e7ef12" name="变更" comment="初始化项目">
+      <change afterPath="$PROJECT_DIR$/四则运算/src/main/java/utils/CalculatorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/四则运算/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/四则运算/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/四则运算/四则运算.iml" beforeDir="false" afterPath="$PROJECT_DIR$/四则运算/四则运算.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,20 +63,34 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/四则运算" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../新建文件夹/WeChat Files/wxid_afm89v41pwi421/FileStorage/File/2022-09/在线音乐/zy" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="jprofiler" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.testGetNotSimilarity">
+  <component name="RunManager" selected="JUnit.MainTest">
+    <configuration name="CalculatorUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.CalculatorUtils" />
+      <module name="四则运算" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="3120004971" />
+      <module name="四则运算" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
       <option name="TEST_OBJECT" value="class" />
@@ -88,53 +98,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testGetNotSimilarity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="3120004971" />
+    <configuration name="MainTest.testCheckSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="四则运算" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testGetNotSimilarity" />
+      <option name="METHOD_NAME" value="testCheckSame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testGetSimilarity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="3120004971" />
+    <configuration name="MainTest.testResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="四则运算" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testGetSimilarity" />
+      <option name="METHOD_NAME" value="testResult" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testHashWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="3120004971" />
+    <configuration name="MainTest.testSuffixExpression" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="四则运算" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testHashWord" />
+      <option name="METHOD_NAME" value="testSuffixExpression" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testReadFileNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="3120004971" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testReadFileNotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="JUnit.MainTest.testResult" />
+      <item itemvalue="JUnit.MainTest.testSuffixExpression" />
+      <item itemvalue="应用程序.CalculatorUtils" />
+      <item itemvalue="JUnit.MainTest.testCheckSame" />
+      <item itemvalue="JUnit.MainTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest.testGetNotSimilarity" />
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.MainTest.testGetSimilarity" />
-        <item itemvalue="JUnit.MainTest.testReadFileNotFound" />
-        <item itemvalue="JUnit.MainTest.testHashWord" />
+        <item itemvalue="JUnit.MainTest.testCheckSame" />
+        <item itemvalue="JUnit.MainTest.testSuffixExpression" />
+        <item itemvalue="应用程序.CalculatorUtils" />
+        <item itemvalue="JUnit.MainTest.testResult" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +158,7 @@
       <workItem from="1663335941065" duration="7074000" />
       <workItem from="1663518460376" duration="4870000" />
       <workItem from="1663659412122" duration="48331000" />
-      <workItem from="1664296447777" duration="55000" />
+      <workItem from="1664296447777" duration="32170000" />
     </task>
     <task id="LOCAL-00001" summary="使用hanlp的分词手段 并测试分词和文件读取以及读取的异常">
       <created>1663685166075</created>
@@ -228,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663815709647</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="初始化项目">
+      <created>1664296567056</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664296567056</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +269,12 @@
     <MESSAGE value="修改一部分bug 最终版" />
     <MESSAGE value="最终版" />
     <MESSAGE value="最终版(更改相似度计算策略)" />
-    <option name="LAST_COMMIT_MESSAGE" value="最终版(更改相似度计算策略)" />
+    <MESSAGE value="初始化项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化项目" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$3120004971.ic" NAME="3120004971中的所有 覆盖结果" MODIFIED="1663789063025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
