@@ -208,7 +208,7 @@ public class CalculatorUtils {
                 int number = (int) (Math.random() * (max - min + 1) + min);
                 if (isFraction == 1) {
                     // 生成分数
-                    int denominator = (int) (Math.random() * 1000 + 1);
+                    int denominator = (int) (Math.random() * 100 + 1);
                     int numerator = (int) (Math.random() * (max * denominator - min * denominator + 1) + min * denominator);
 
                     Rational rational = new Rational(numerator, denominator);

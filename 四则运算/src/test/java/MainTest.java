@@ -2,8 +2,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import utils.CalculatorUtils;
+import utils.CommonUtils;
 import utils.Rational;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class MainTest {
@@ -90,6 +92,23 @@ public class MainTest {
         List<List<Object>> lists = CalculatorUtils.generateQuestion(10, 10);
         System.out.println(lists);
 
+    }
+
+    @Test
+    void testMainGenerateQuestion(){
+        Application.main(new String[]{"-n", "10", "-r", "10"});
+    }
+
+    @Test
+    void testReadFile(){
+        String s = CommonUtils.readFileToStr("D:\\项目\\软件工程\\四则运算\\Exercises.txt");
+
+        System.out.println(CommonUtils.analyzeExpression(s));
+    }
+
+    @Test
+    void testMainCalculate(){
+        Application.main(new String[]{"-e", "Exercises.txt", "-a", "Answers.txt"});
     }
 
 }
